@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Georgios Magdis | Publications</title>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script> 
+		    
+		    $.get('/templates/head.html', function(response) {
+			    $('head').append(response);
+			});
+
+	    </script>
+
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<script> 
+				    $.get('/templates/menu_nav.html', function(response) {
+					    $('#wrapper').append(response);
+					});
+			    </script>
+					
+
+				<!-- Banner -->
+				<section id="banner" class="major">
+					<div class="inner">
+						<header class="major">
+							<h1>Publications</h1>
+						</header>
+						</div>
+				</section>
+
+				<section>
+					<div class="inner">
+
+							A complete list of my publications can be found in <a href="https://ui.adsabs.harvard.edu/user/libraries/jP-_OasTTjyqqBfSTSLyxg" target="_blank">ADS Library</a>.
+								<br />
+
+							ORCID : <a href="https://orcid.org/0000-0002-8412-7951" target="_blank">0000-0002-8412-7951</a>  <p/>
+							</div>
+				</section>
+
+				<script>  
+				    $.get('templates/footer.html', function(response) {
+					        $('#wrapper').append(response);
+					});
+			    </script>
+
+			</div>
+
+		<!-- Scripts -->
+		
+	    <script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+			    var myDropdown = document.getElementById("myDropdown");
+			      if (myDropdown.classList.contains('show')) {
+			        myDropdown.classList.remove('show');
+			      }
+			  }
+			}
+		</script>
+
+	</body>
+</html>

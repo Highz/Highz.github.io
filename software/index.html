@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Georgios Magdis | Software</title>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script> 
+		    
+		    $.get('/templates/head.html', function(response) {
+			    $('head').append(response);
+			});
+
+	    </script>
+
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<script> 
+				    $.get('/templates/menu.html', function(response) {
+					    $('#wrapper').append(response);
+					});
+			    </script>
+					
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Software</h1>
+							</header>
+							</div>
+					</section>
+
+							<section>
+						<div class="inner">
+
+								 1. <a href="https://drive.google.com/drive/folders/18iknbRBUJSqU3Tc5Fh6DRVJFrnLcWcl4" target="_blank">COSMOS FIR+(sub)mm+radio Super-deblended catalog (Jin et al. 2018)</a>.
+									<br />
+									2. <a href="https://github.com/Nikolaj-B-Sillassen/GalCluster" target="_blank"> GalCluster: Automatic Search for Galaxy
+Clusters by Overdensity Mapping (Sillassen et al. 2021)</a>.
+									<br />
+						</div>
+					</section>
+
+				<script>  
+				    $.get('templates/footer.html', function(response) {
+					        $('#wrapper').append(response);
+					});
+				    </script>
+
+			</div>
+
+		<!-- Scripts -->
+		 <script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+			    var myDropdown = document.getElementById("myDropdown");
+			      if (myDropdown.classList.contains('show')) {
+			        myDropdown.classList.remove('show');
+			      }
+			  }
+			}
+		</script>
+
+
+	</body>
+</html>

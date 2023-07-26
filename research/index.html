@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Georgios Magdis</title>
+		
+		<script src="/assets/js/jquery.min.js"></script>
+		<script> 
+		    
+		    $.get('/templates/head.html', function(response) {
+			    $('head').prepend(response);
+			});
+
+	    </script>
+
+
+		<style type="text/css">
+			h3	{
+				color: #242943;
+			}
+			#banner{
+				background-image: url("/images/milky.jpg")!important;	
+			}
+			
+		</style>
+		<style>
+		a:hover{
+			color:black!important;
+		}
+		</style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<script> 
+				    $.get('/templates/menu_nav.html', function(response) {
+					    $('#wrapper').append(response);
+					});
+			    </script>
+					
+
+				<!-- Banner -->
+					<section id="banner" class="major" style="background-image:url('/images/milky.jpg')">
+						<div class="inner"  style="background: transparent;">
+							<header class="major">
+								<h1>Research</h1>
+							</header>
+					
+								
+						</div>
+							<!-- <div class="content" style="background: transparent; color: white;">
+								<p>Sub Header</p>
+							</div> -->
+						
+					</section>
+
+				<!-- Main -->
+
+					<section>
+						<div class="inner">
+							
+                            <p>My research lies in the area of observational astrophysics and galaxy evolution. 
+                                I focus on two major topics: (1) dusty star-forming galaxies and (2) clusters of galaxies at high redshift,
+                                aiming to reveal their formation, growth, and evolution across the history of the Universe. 
+                                For my research, I use multi-wavelength data, and I specialise in 
+                            	infrared (JWST, HST, VLT, VISTA, Spitzer), submm/mm (ALMA, NOEMA, Herschel, JCMT, LMT, IRAM) and radio observations (VLA, MeerKAT). 
+                            	Currently, I am working on searching for the most distant dusty galaxies and protoclusters,
+                            	aim to pioneer our view of galaxy and structure formation.
+                            	Some selected publications are listed below: </p>
+
+							<div>
+								
+								<h3>Starbursting versus normal star formation</h3>
+
+								<ul>
+								<!-- <h3 style="text-decoration:underline;">The Interstellar Medium of Galaxies Across Cosmic Time</h3> -->
+								
+
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.5217P/abstract" target="_blank">Submillimetre compactness as a critical dimension to understand the main sequence of star-forming galaxies (ApJ)</a></li>
+										  <li><a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A.155V/abstract" target="_blank">CO emission in distant galaxies on and above the main sequence (ApJ)</a></li>
+
+					
+								</ul>
+							</div>
+
+							<div>
+
+								<h3>Deep optical, FIR and mm cosmological surveys</h3>
+
+								<ul>
+								  
+								  <li><a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221107865C/abstract" target="_blank">  COSMOS-Web: An Overview of the JWST Cosmic Origins Survey   (A&A)</a></li>
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...853..172L/abstract" target="_blank">	“Super-deblended” Dust Emission in Galaxies. I. The GOODS-North Catalog and the Cosmic Star Formation Rate Density out to Redshift 6 (ApJ)</a></li>
+								</ul>
+							</div>
+							<div>
+
+								<h3>The interstellar medium of star forming galaxies</h3>
+								<ul>
+								  
+
+								  <li><a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...665A...3J/abstract" target="_blank">Diagnosing deceivingly cold dusty galaxies at 3.5 < z < 6: A substantial population of compact starbursts with high infrared optical depths    (A&A)</a></li>
+								<!-- <p>blah lbah balh</p> -->
+								</ul>
+							</div>
+			
+
+							<div>
+								<h3>Gas dynamics, clustering and the connection between the star-formation and the dark matter halo of distant galaxies</h3>
+								<ul>
+								  
+
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...665L...7S/abstract" target="_blank">A galaxy group candidate at z ≈ 3.7 in the COSMOS field  (A&A)</a></li>
+								<!-- <p>blah lbah balh</p> -->
+							</ul>
+							</div>
+												                
+							<div>
+								<h3>The first "dead" galaxies in The Universe and the quenching mechanisms of star-formation </h3>
+								<ul>
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2018NatAs...2..239G/abstract" target="_blank">The unexpectedly large dust and gas content of quiescent galaxies at z > 1.4 (Nature Ast)</a></li>
+								</ul>
+							</div>
+
+
+							<div>
+								<h3>The first galaxies and QSOs in the Universe  </h3>
+								<ul>
+									<li><a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221209372J/abstract" target="_blank">   Massive galaxy formation caught in action at z~5 with JWST (A&A)</a></li>
+								</ul>
+							</div>
+
+
+
+						</div>
+					</section>
+				
+					<script> 
+			    
+				    $.get('/templates/footer.html', function(response) {
+					        $('#wrapper').append(response);
+					});
+
+				    </script>
+
+			</div>
+
+		<!-- Scripts -->
+
+		<script> 	    
+		    $.get('/templates/scripts.html', function(response) {
+			        //$('body').append(response);
+			});
+	    </script>
+
+	     <script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+			    var myDropdown = document.getElementById("myDropdown");
+			      if (myDropdown.classList.contains('show')) {
+			        myDropdown.classList.remove('show');
+			      }
+			  }
+			}
+		</script>
+
+	</body>
+</html>

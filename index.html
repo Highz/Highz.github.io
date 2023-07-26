@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	Forty by HTML5 UP
@@ -6,210 +7,165 @@
 -->
 <html>
 	<head>
-		<title>Forty by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<title>Shuowen Jin | Home</title>
+
+		<script src="/assets/js/jquery.min.js"></script>
+		<script> 
+		    
+		    $.get('templates/head.html', function(response) {
+			    $('head').append(response);
+			});
+
+	    </script>
+
+		<style type="text/css">
+			h3	{
+				color: #242943;
+			}
+		</style>
 	</head>
-	<body class="is-preload">
+	<body>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+				<script> 
+				    $.get('templates/menu.html', function(response) {
+					    $('#wrapper').append(response);
+					});
+			    </script>
+					
 
 				<!-- Banner -->
 					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Forty</h1>
+						<div class="inner"  style="background: transparent;">
+							<img src="/images/m5.png" style="max-width:350px; text-align:center;">
+							<header class="major" style="background: transparent;">
+								<h1>Shuowen Jin</h1>
 							</header>
-							<div class="content">
-								<p>A responsive site template designed by HTML5 UP<br />
-								and released under the Creative Commons.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+							<div class="content" style="background: transparent; color: white;">
+								<ul style="list-style: none; color: white; padding-left:0px; background-transparent;">
+									<li>Marie Curie Fellow - Cosmic DAWN Center </li>
+									<li> Technical University of Denmark (DTU Space) 
+										 </li>
 								</ul>
+
+								<!-- <ul class="actions">
+									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+								</ul> -->
 							</div>
 						</div>
 					</section>
 
 				<!-- Main -->
-					<div id="main">
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Aliquam</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Tempus</a></h3>
-										<p>feugiat amet tempus</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Ipsum</a></h3>
-										<p>Nisl sed aliquam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Consequat</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
-									</header>
-								</article>
-							</section>
-
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
+								<!-- <section> -->
+									<div class="ibox">
+										<p>
+											Thank you for visiting my website!<br />
+										</p>
+
+										<p>I am an astronomer (Marie Curie Fellow) working at the Cosmic DAWN Center, DTU-Space in Denmark. My research is focused on understanding the formation and evolution of galaxies and structures in the early universe. Particularly, I am interested in the most distant galaxies and galaxy clusters, aiming to efficiently discover them and understand how they form and evolve. </p>
+
+										<p>To understand our Universe, I make use of astronomical data at every wavelengths with an emphasis on infrared (JWST, HST, VLT, VISTA, Spitzer), submm/mm (ALMA, NOEMA, Herschel, JCMT, LMT, IRAM) and radio observations (VLA, MeerKAT). This allows us to investigate the interstellar medium properties in distant galaxies, when the Universe was younger than 1/10 of its current age. </p>
+
+											<p>Started my astronomy career in Nanjing, China, I pursued my PhD in Astrophysics at CEA Paris-Saclay in France, and have been working in Europe for eight years. My research and CV can be found below: </p>
+									
+					                
+					                	<!-- <a href="research/"> Research </a> <br /> -->
+					                <a href="research/"> Research </a> <br />
+					                <a href="pdfs/CV_sjin.pdf" target="_blank" > CV </a>  <br />
+					                <a href="publications/"> Publications </a> <br />
+					                <a href="software/"> Software </a><br />
+									<br />
+
+									<p>
+
+
+									</p>					                
+
+									
 									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
+								<!-- </section> -->
 							</section>
 							<section class="split">
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
+										<span class="icon alt fa-envelope"></span>
+										<h3 style="color:#242943;">Email</h3>
+										<a href="#">shuji"at"dtu.dk</a> <br />
+										<a href="#">shuowen.jin"at"gmail.com</a>
+									</div>
+								</section>
+								<section>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
+										<span class="icon alt fa-home"></span>
+										<h3 style="color:#242943;">Address</h3>
+
+										<span>DTU Space, Technical University of Denmark<br />
+										Elektrovej 327<br />
+										2800 Lyngby, Denmark</span>
+										<br />
+										<br />
+
 									</div>
 								</section>
 							</section>
 						</div>
 					</section>
+				
+				
+				<script> 
+			    
+			    $.get('templates/footer.html', function(response) {
+				        $('#wrapper').append(response);
+				});
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+			    </script>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- <script src="/assets/js/jquery.min.js"></script> -->
+		<!-- <script src="/assets/js/jquery.scrolly.min.js"></script> -->
+		<!-- <script src="/assets/js/jquery.scrollex.min.js"></script> -->
+		<!-- <script src="/assets/js/skel.min.js"></script> -->
+		<!-- <script src="/assets/js/util.js"></script> -->
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<!-- <script src="/assets/js/main.js"></script> -->
+
+
+		<script> 	    
+		    $.get('templates/scripts.html', function(response) {
+			      //  $('body').append(response);
+			});
+	    </script>
+
+	    <script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+			    var myDropdown = document.getElementById("myDropdown");
+			      if (myDropdown.classList.contains('show')) {
+			        myDropdown.classList.remove('show');
+			      }
+			  }
+			}
+		</script>
+
 
 	</body>
 </html>
+
