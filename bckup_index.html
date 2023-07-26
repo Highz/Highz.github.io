@@ -1,0 +1,173 @@
+
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Shuowen Jin | Home</title>
+
+		<script src="/assets/js/jquery.min.js"></script>
+		<script> 
+		    
+		    $.get('templates/head.html', function(response) {
+			    $('head').append(response);
+			});
+
+	    </script>
+
+		<style type="text/css">
+			h3	{
+				color: #242943;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<script> 
+				    $.get('templates/menu.html', function(response) {
+					    $('#wrapper').append(response);
+					});
+			    </script>
+					
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner"  style="background: transparent;">
+							<img src="/images/m5.png" style="max-width:350px; text-align:center;">
+							<header class="major" style="background: transparent;">
+								<h1>Shuowen Jin</h1>
+							</header>
+							<div class="content" style="background: transparent; color: white;">
+								<ul style="list-style: none; color: white; padding-left:0px; background-transparent;">
+									<li>Marie Curie Fellow - Cosmic DAWN Center </li>
+									<li> Technical University of Denmark (DTU Space) 
+										 </li>
+								</ul>
+
+								<!-- <ul class="actions">
+									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+								</ul> -->
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<!-- <section> -->
+									<div class="ibox">
+										<p>
+											Thank you for visiting my website!<br />
+										</p>
+
+										<p>I am an astronomer (Marie Curie Fellow) working at the Cosmic DAWN Center, DTU-Space in Denmark. My research is focused on understanding the formation and evolution of galaxies and structures in the early universe. Particularly, I am interested in the most distant galaxies and galaxy clusters, aiming to efficiently discover them and understand how they form and evolve. </p>
+
+										<p>To understand the physics of our Universe, I make use of astronomical data at every wavelengths with an emphasis on infrared (JWST, HST, VLT, VISTA, Spitzer), submm/mm (ALMA, NOEMA, Herschel, JCMT, LMT, IRAM) and radio observations (VLA, MeerKAT). This allows us to investigate the interstellar medium properties in distant galaxies, when the Universe was younger than 1/10 of its current age. </p>
+
+											<p>Coming from China, I pursued my PhD in Astrophysics at CEA Paris-Saclay in France and Nanjing University in China. My research and CV can be found below: </p>
+									
+					                
+					                	<!-- <a href="research/"> Research </a> <br /> -->
+					                <a href="research/"> Research </a> <br />
+					                <a href="pdfs/CV.pdf" target="_blank" > CV </a>  <br />
+					                <a href="publications/"> Publications </a> <br />
+					                <a href="software/"> Software </a><br />
+									<br />
+
+									<p>
+
+
+									</p>					                
+
+									
+									</div>
+								<!-- </section> -->
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-envelope"></span>
+										<h3 style="color:#242943;">Email</h3>
+										<a href="#">shuji"at"dtu.dk</a> <br />
+										<a href="#">shuowen.jin"at"gmail.com</a>
+									</div>
+								</section>
+								<section>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-home"></span>
+										<h3 style="color:#242943;">Address</h3>
+
+										<span>National Space Institute<br />
+											DTU-Space, Technical University of Denmark<br />
+
+										Elektrovej Bygning 327<br />
+										2800 Kongens Lyngby, Denmark</span>
+										<br />
+										<br />
+
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+				
+				
+				<script> 
+			    
+			    $.get('templates/footer.html', function(response) {
+				        $('#wrapper').append(response);
+				});
+
+			    </script>
+
+			</div>
+
+		<!-- Scripts -->
+		<!-- <script src="/assets/js/jquery.min.js"></script> -->
+		<!-- <script src="/assets/js/jquery.scrolly.min.js"></script> -->
+		<!-- <script src="/assets/js/jquery.scrollex.min.js"></script> -->
+		<!-- <script src="/assets/js/skel.min.js"></script> -->
+		<!-- <script src="/assets/js/util.js"></script> -->
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<!-- <script src="/assets/js/main.js"></script> -->
+
+
+		<script> 	    
+		    $.get('templates/scripts.html', function(response) {
+			      //  $('body').append(response);
+			});
+	    </script>
+
+	    <script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+			    var myDropdown = document.getElementById("myDropdown");
+			      if (myDropdown.classList.contains('show')) {
+			        myDropdown.classList.remove('show');
+			      }
+			  }
+			}
+		</script>
+
+
+	</body>
+</html>
+
