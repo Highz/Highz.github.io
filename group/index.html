@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Georgios Magdis | Home</title>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script> 
+		    
+		    $.get('/templates/head.html', function(response) {
+			    $('head').prepend(response);
+			});
+
+	    </script>
+
+
+		<style type="text/css">
+			h3	{
+				color: #242943;
+			}
+			#banner{
+				background-image: url("/images/milky.jpg")!important;	
+			}
+					
+			a:hover{
+				color:black!important;
+			}
+		
+			.profile_image{
+				max-width:250px;
+			}
+
+			h3{
+				color:#242943;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<script> 
+				    $.get('/templates/menu.html', function(response) {
+					    $('#wrapper').append(response);
+					});
+			    </script>
+
+				<!-- <div id="main"> -->
+
+					<section id="banner" class="major"  style="background-image:url('/images/milky.jpg');">
+						<div class="inner">
+							<header class="major">
+								<h1>Group Members</h1>
+							</header>
+							
+							<p style="color:white;">I'm a core member of Prof. <a href="https://georgiosmagdis.github.io/" target="_blank">Georgios E. Magdis</a> group at DAWN. My own team is still small but growing. Below you can find a list of my students:</p>
+						</div>
+					</section>
+
+					<section>
+
+						<div class="inner">
+
+
+							<h3>Co-supervised PhD Students </h3>
+							<ul>
+								<li>Nikolaj B. Sillassen</li>
+								<li>David Blanbquez Sese</li>
+								<li>Malte Brinch </li>
+								<li>Vasily Kokorev</li>
+                                <li>Marko Shuntov</li>
+
+							</ul>
+
+							<h3>MSc Students </h3>
+							<ul>
+								<li>N. Sillassen</li>
+
+                            <ul>
+
+						</div>
+
+					</section>
+
+				<!-- </div> -->
+				
+				<script> 
+			    
+				    $.get('/templates/footer.html', function(response) {
+					        $('#wrapper').append(response);
+					});
+
+				    </script>
+			</div>
+
+		<!-- Scripts -->
+		<script> 	    
+		    $.get('/templates/scripts.html', function(response) {
+			        //$('body').append(response);
+			});
+	    </script>
+
+	     <script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+			    var myDropdown = document.getElementById("myDropdown");
+			      if (myDropdown.classList.contains('show')) {
+			        myDropdown.classList.remove('show');
+			      }
+			  }
+			}
+		</script>
+
+	</body>
+</html>
